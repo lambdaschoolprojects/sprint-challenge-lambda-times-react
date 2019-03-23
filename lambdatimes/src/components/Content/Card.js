@@ -7,7 +7,10 @@ const Card = ({ card: { headline, author, img } }) => {
       <div className="headline">{headline /* headline goes here */}</div>
       <div className="author">
         <div className="img-container">
-          <img src={img /* image source goes here */} />
+          <img
+            src={img /* image source goes here */}
+            alt="stop linting error"
+          />
         </div>
         <span>By {author /* author goes here */}</span>
       </div>

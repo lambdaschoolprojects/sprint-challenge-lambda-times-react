@@ -14,7 +14,6 @@ const Cards = ({ cards }) => {
 };
 
 const getCards = cards => {
-  console.log(cards);
   return cards.map((card, index) => <Card card={card} key={index} />);
 };
 

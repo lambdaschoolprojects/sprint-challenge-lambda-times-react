@@ -22,5 +22,5 @@ export default Card;
 Card.propTypes = {
   headline: PropTypes.string,
   author: PropTypes.string,
-  cardImage: PropTypes.string
+  img: PropTypes.string
 };

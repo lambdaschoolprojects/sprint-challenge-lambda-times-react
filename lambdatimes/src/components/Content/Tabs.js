@@ -16,7 +16,6 @@ const Tabs = props => {
 };
 
 const getTabs = ({ tabs, selectedTab, selectTabHandler }) => {
-  console.log(tabs);
   return tabs.map((tab, index) => (
     <Tab
       selectTabHandler={selectTabHandler}

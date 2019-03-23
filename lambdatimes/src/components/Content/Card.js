@@ -1,13 +1,13 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-const Card = ({ headline, author, cardImage }) => {
+const Card = ({ card: { headline, author, img } }) => {
   return (
     <div className="card">
       <div className="headline">{headline /* headline goes here */}</div>
       <div className="author">
         <div className="img-container">
-          <img src={cardImage /* image source goes here */} />
+          <img src={img /* image source goes here */} />
         </div>
         <span>By {author /* author goes here */}</span>
       </div>

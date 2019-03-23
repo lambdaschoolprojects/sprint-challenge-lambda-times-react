@@ -8,11 +8,14 @@ const Cards = ({ cards }) => {
     <div className="cards-container">
       {/* Using the cards prop, map over the list creating a 
           new Card component for each passing the card as the only prop*/
-      cards.map(card => (
-        <Card card={card} />
-      ))}
+      getCards(cards)}
     </div>
   );
+};
+
+const getCards = cards => {
+  console.log(cards);
+  return cards.map((card, index) => <Card card={card} key={index} />);
 };
 
 // Make sure you include prop types for all of your incoming props
